@@ -10,7 +10,7 @@ local main = Window:MakeTab({"main", ""})
 local scriptsf = Window:MakeTab({"scripts for game", "Sword"})
 local scriptsg = Window:MakeTab({"scripts gui", "Sword"})
 
-
+-- e o João né slk eu sei você viu esse script por favor não copie
 
 
 
