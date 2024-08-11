@@ -1,0 +1,54 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+
+local Window = redzlib:MakeWindow({"dy hub", "by davioppp", "testando-redzLibv5.json"})
+Window:AddMinimizeButton({
+  Button = { Image = redzlib:GetIcon(""), BackgroundTransparency = 0 },
+  Corner = { CornerRadius = UDim.new(0, 6) }
+})
+
+local main = Window:MakeTab({"main", ""})
+local scriptsf = Window:MakeTab({"scripts for game", "Sword"})
+
+
+
+
+
+local Dropdown = main:AddDropdown({
+  Name = "theme ",
+  Description = "Select a theme ",
+  Options = {"dark", "darker", "Purple"},
+  Default = {"dark", "darker"},
+  Flag = "Dropdown Teste 2",
+  MultiSelect = true
+})
+
+Dropdown:Callback(function(V)
+ if V == "dark" then
+    redzlib:SetTheme("Dark")
+elseif V == "darker" then
+    redzlib:SetTheme("Darker")
+elseif V == "Purple" then
+    redzlib:SetTheme("Purple")
+end
+end)
+
+main:AddDiscordInvite({
+  Name = "dy hub | Community",
+  Description = "join discord to always check out the news  ",
+  Logo = "rbxassetid://18910887668",
+  Invite = "https://discord.gg/Vtu7Sv4yAf"
+})
+
+scriptsf:AddButton({"Imperial Hub brookhaven", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+end})
+
+scriptsf:AddButton({"connect hub dusty trip", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+end})
+
+scriptsf:AddButton({"dusty trip script good", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+end})
+
+
