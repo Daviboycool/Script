@@ -8,6 +8,7 @@ Window:AddMinimizeButton({
 
 local main = Window:MakeTab({"main", ""})
 local scriptsf = Window:MakeTab({"scripts for game", "Sword"})
+local scriptsg = Window:MakeTab({"scripts gui", "Sword"})
 
 
 
@@ -39,16 +40,39 @@ main:AddDiscordInvite({
   Invite = "https://discord.gg/Vtu7Sv4yAf"
 })
 
+local Section = scriptsf:AddSection({"scripts brookhaven"})
+
 scriptsf:AddButton({"Imperial Hub brookhaven", function()
   loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
 end})
 
+scriptsf:AddButton({"SanderXV2.5 brookhaven", function()
+  loadstring(game:HttpGet(('https://raw.githubusercontent.com/sXPiterXs1111/SanderXV2.5/main/SanderXV2.5.lua')))()
+end})
+
+local Section = scriptsf:AddSection({"scripts dusty trip"})
+
+scriptsf:AddButton({"Erudite Hub dusty trip", function()
+  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+end})
+
 scriptsf:AddButton({"connect hub dusty trip", function()
-  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
 end})
 
-scriptsf:AddButton({"dusty trip script good", function()
-  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+local Section = scriptsf:AddSection({"Roblox Funky Friday scripts"})
+
+scriptsf:AddButton({"auto play", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
 end})
 
+local Section = scriptsf:AddSection({"break in script"})
+
+scriptsf:AddButton({"break in 2", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+end})
+
+scriptsg:AddButton({"fly gui", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro69Yes/sussy-Script/main/SecuredFlyGuiv3.lua'))()
+end})
 
